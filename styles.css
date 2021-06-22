@@ -6,7 +6,7 @@
 
 html {
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -29,7 +29,7 @@ img {
 }
 
 .section-title {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
     margin-bottom: 10px;
@@ -44,13 +44,14 @@ img {
 
 .cta {
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     color: crimson;
     border: 2px solid crimson;
-    font-size: 1.3rem;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 30px;
+    margin-bottom: 30px;
     transition: .3s ease;
     transition-property: background-color, color;
 }
@@ -61,10 +62,10 @@ img {
 }
 
 .brand h1 {
-    font-size: 45px;
+    font-size: 25px;
     text-transform: uppercase;
     color: white;
-    font-weight: bolder;
+    font-weight: 1000;
 }
 
 .brand h1 span {
@@ -221,6 +222,7 @@ img {
     background-size: cover;
     background-position: top center;
     position: relative;
+    z-index: 1;
 }
 
 #hero::after {
@@ -231,7 +233,7 @@ img {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .95;
+    opacity: .60;
     z-index: -1;
 }
 
@@ -285,6 +287,8 @@ img {
     animation-delay: 1s;
 }
 
+
+
 /*#hero .cta {
     display: inline-block;
     padding: 5px 20px;
@@ -318,6 +322,7 @@ img {
 #services .service-top {
     width: 500px;
     max-margin: 0 auto;
+    max-width: 80%;
 }
 
 /*#services .services {
@@ -356,6 +361,7 @@ img {
 #services .service-bottom p,h2 {
     color: white;
 }
+
 
 
 #services .service-item {
@@ -428,6 +434,7 @@ img {
     flex-direction: column;
 }
 
+
 #projects .project-item {
     display: flex;
     align-items: center;
@@ -452,18 +459,21 @@ img {
 }
 
 #projects .project-info p {
-    font-size: 0.8rem;
+    font-size: 15px;
+}
+
+#projects .project-info h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 #projects .project-info h2 {
     color: white;
-    font-size: 1.6rem;
-}
-
-#projects .project-info h3 {
-    color: white;
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #projects .project-img {
@@ -528,13 +538,17 @@ img {
     margin-bottom: 20px;
 }
 
-#about .col-right .cta {
+#about .col-right p {
+    font-size: 19px;
+}
+
+/*#about .col-right .cta {
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: .8re;
     color: black;
     font-weight: bold;
-}
+}*/
 
 #about .col-left .about-img {
     height: 100%;
@@ -672,7 +686,7 @@ img {
 
 @keyframes text_reveal_name {
     100%{
-        color: black;
+        color: white;
         font-weight: 700;
     }
 }
@@ -824,8 +838,6 @@ img {
     #header .nav-list ul a::after {
         display: none;
     }
-
-
     /* End of header*/
     #services .services .service-bottom .service-item {
         flex-basis: 22%;
