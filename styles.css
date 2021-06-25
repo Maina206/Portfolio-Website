@@ -32,7 +32,7 @@ img {
     font-size: 40px;
     font-weight: bold;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -47,7 +47,7 @@ img {
     padding: 10px 20px;
     color: crimson;
     border: 2px solid crimson;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 30px;
@@ -166,7 +166,7 @@ img {
     justify-content: center;
     z-index: 100;
     cursor: pointer;
-    transform: scale(.6);
+    transform: scale(0.6);
     margin-right: 20px;
 }
 
@@ -317,6 +317,7 @@ img {
     max-width: 90%;
     margin: 0 auto;
     padding: 100px 0;
+    /*border: 2px solid black; */
 }
 
 #services .service-top {
@@ -356,6 +357,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    /*border: 2px solid black;*/
 }
 
 #services .service-bottom p,h2 {
@@ -399,7 +401,7 @@ img {
 }
 
 #services .service-item h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -408,7 +410,7 @@ img {
 #services .service-item p {
     color: white;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.2rem;
 }
 
@@ -416,11 +418,16 @@ img {
 
 
 /* Projects section */
+#project {
+    /*border: 2px solid black;*/
+}
+
 #projects .projects {
     flex-direction: column;
     max-width: 80%;
     margin: 0 auto;
     padding: 100px 0;
+    /*border: 2px solid black;*/
 }
 
 #projects .project-header h1 {
@@ -512,6 +519,7 @@ img {
     max-width: 80%;
     margin: 0 auto;
     padding: 100px 20px;
+    /*border: 2px solid black;*/
 }
 
 #about .col-left {
@@ -539,7 +547,8 @@ img {
 }
 
 #about .col-right p {
-    font-size: 19px;
+    font-size: 16.5px;
+    text-align: justify;
 }
 
 /*#about .col-right .cta {
@@ -573,17 +582,19 @@ img {
 /*Contact Section*/
 #contact .contact {
     flex-direction: column;
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 80%;
+    padding: 100px 0;
+    /*border: 2px solid black;*/
 }
 
 #contact .contact-items {
-    width: 70%;
+    width: 85%;
 }
 
 #contact .contact-item {
-    width:80%;
-    padding: 20px;
+    width: 80%;
     text-align: center;
     border-radius: 20px;
     padding: 30px;
@@ -591,23 +602,35 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 18px 0 #0000002c; 
-    flex-direction: column;   
+    flex-direction: column;
+    box-shadow: 0px 0px 25px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
 }
 
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000002c;
-    transition: .3s ease box-shadow;
 }
 
 #contact .icon {
     width: 70px;
+    height: 70px;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info h1,h2 {
+    color: black;
+}
+
+#contact .contact-info h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
     margin-bottom: 10px;
 }
 
-#contact .contact-info p{
+#contact .contact-info h2 {
     font-size: .9rem;
+    line-height: 1.8rem;
     font-weight: 600;
 }
 /*End-of Contact Section*/
@@ -698,12 +721,13 @@ img {
 /*For tablet screen*/
 @media only screen and (min-width: 768px) {
     .cta {
-        font-size: 35px;
+        font-size: 26px;
         padding: 10px 30px;
+        border-radius: 30px;
     }
 
     h1.section-title {
-        font-size: 65px;
+        font-size: 55px;
     }
 
     /* Hero */
@@ -717,6 +741,15 @@ img {
         flex-basis: 45%;
         margin: 2.5%;
     }
+
+    #services .service-item h2 {
+        font-family: 1.2rem;
+    }
+
+    #services .service-item p {
+        font-family: 1.2rem;
+    }
+
     /* End of Service section */
 
     /* Projects */
@@ -729,7 +762,7 @@ img {
     }
 
     #projects .project-item {
-        height: 400px;
+        height: 350px;
         margin: 0;
         width: 100%;
         border-radius: 0;
@@ -776,27 +809,31 @@ img {
     /*Contact*/
     #contact .contact {
         flex-direction: column;
-        padding: 100px 0;
+        /*padding: 100px 0;*/
         align-items: center;
         justify-content: center;
-        min-height: 20vh;
+        min-width: 20vh;
     }
 
     #contact .contact-items {
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 20px;
+        justify-content: space-evenly;
         margin: 0;
     }
 
     #contact .contact-item {
-        margin: 20px;
-        flex-direction: row;
+        /*padding: 20px;*/
+        width: 30%;
+        margin: 0;
+        /*flex-direction: row;*/
     }
-    #contact .contact-item .icon{
-        height: 70px;
-        width: 70px;
+
+    #contact .contact-item .icon {
+        /*border: 2px solid green;*/
+        height: 65px;
+        width: 65px;
     }
 
     #contact .contact-item .icon img {
@@ -805,11 +842,19 @@ img {
 
     #contact .contact-item .contact-info {
         width: 100%;
-        text-align: left;
-        padding-left: 20px;
+        text-align: center;
     }
-    /*End-of Contact*/
+
+    #contact .contact-info h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact .contact-info h2 {
+        font-size: .8rem;
+    }
 }
+    /*End-of Contact*/
+
 
 /* End-ofMedia Query for tablet */
 
